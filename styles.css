@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+.card {
+  max-width: 320px;
+  border-radius: 20px;
+  background-color: hsl(225, 100%, 98%);
+  text-align: center;
+}
+.card > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.text-content {
+  padding: 22px;
+}
+h1 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+p {
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+  color: hsl(224, 23%, 55%);
+  margin-top: 15px;
+}
+.rate-display {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(225, 60%, 94%);
+  border-radius: 10px;
+  align-items: center;
+  padding: 15px;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+.rate-display > img {
+  width: 44px;
+  height: 44px;
+}
+.annual-plan {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  align-items: flex-start;
+}
+h2 {
+  font-size: 0.7em;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+span {
+  font-size: 0.8em;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.rate-display > a {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.payment-section {
+  margin-top: 22px;
+}
+button {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 0.8em;
+  font-weight: 700;
+  box-shadow: 0 20px 30px hsla(245, 75%, 52%, 0.2);
+  margin-bottom: 5px;
+}
+.payment-section > p > a {
+  margin-top: 25px;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.2em;
+  font-weight: 900;
+  text-decoration-line: none;
+  letter-spacing: -0.2px;
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    max-width: 400px;
+  }
+  .text-content h1 {
+    font-size: 1.4em;
+    margin-top: 0;
+  }
+  .text-content p {
+    font-size: 0.9em;
+    letter-spacing: 0;
+  }
+  .text-content {
+    padding: 35px;
+  }
+  .annual-plan h2 {
+    font-size: 0.8em;
+  }
+  .rate-display > a {
+    margin-left: 80px;
+    font-weight: 900;
+  }
+  .rate-display > a:hover {
+    text-decoration-line: none;
+    color: hsla(245, 75%, 52%, 0.8);
+  }
+  button:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+    cursor: pointer;
+  }
+  .payment-section > p > a {
+    font-size: 0.9em;
+  }
+  .payment-section > p > a:hover {
+    color: hsl(223, 47%, 23%);
+  }
+}
